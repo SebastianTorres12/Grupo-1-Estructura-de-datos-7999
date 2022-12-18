@@ -13,6 +13,7 @@ GITHUB: Grupo-1-Estructura-de-datos-7999
 #include <string>
 #include <stdlib.h>
 #include "Burbuja.cpp"
+
 using namespace std;
 
 int main()
@@ -21,7 +22,7 @@ Burbuja b;
 
 initwindow(1150,500); 
 int numero,nume;
-char vecS[10];
+char vecS[10], datoEntero[10];
 
 settextstyle(7,HORIZ_DIR,6);
 
