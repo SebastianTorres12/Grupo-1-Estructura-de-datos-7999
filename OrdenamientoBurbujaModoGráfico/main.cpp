@@ -22,7 +22,7 @@ Burbuja b;
 ValidacionDatos objValidar;
 char elementosV[10];
 initwindow(1150,500); 
-int numero,nume;
+int numero;
 char vecS[10];
 int numero=0;
 char vecS[10];
@@ -46,11 +46,9 @@ for (int i = 0; i < numero; i++) {
     arr[i] = 10+rand()%(100-10);
   }
 
-int n = sizeof(arr) / sizeof(arr[0]);
-
-b.dibujarCuadros(arr, n, -1, -1);
+b.dibujarCuadros(arr, numero, -1, -1);
 delay(1200);
-b.burbujaGrafico(arr, n);
+b.burbujaGrafico(arr, numero);
 
 getch();
 closegraph();
