@@ -102,6 +102,7 @@ for (int i = 0; i < numero; i++) {
 for (int i = 0; i < numero; i++) {
     arr[i] = 10+rand()%(100-10);
   }
+
 //int arr[] = {8, 6, 3, 1, 5, 2, 9,4,7,15,54,21,18};
 int n = sizeof(arr) / sizeof(arr[0]);
 
