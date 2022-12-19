@@ -1,6 +1,6 @@
 /***********************************************************************
 UFA - ESPE
-AUTORES: Matías Padrón,Sebastian Torres, Cristhoper Villamarin, Paola Moncayo, Camilo Orrico, Jeimy Morales, Ariel Guevera
+AUTORES: Matías Padrón,Sebastian Torres, Cristhoper Villamarin, Paola Moncayo, Camilo Orrico, Jeimy Morales, Ariel Guevara
 FECHA DE CREACIÓN: 17/12/2022
 FECHA DE MODIFICACIÓN: 18/12/2022
 Grupo1-Ordenamineto Burbuja Modo Gráfico
