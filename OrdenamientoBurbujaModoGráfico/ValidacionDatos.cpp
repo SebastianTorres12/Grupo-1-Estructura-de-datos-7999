@@ -7,7 +7,7 @@ FECHA DE MODIFICACIÓN: 18/12/2022
 Grupo1-Ordenamineto Burbuja Modo Gráfico
 GITHUB: Grupo-1-Estructura-de-datos-7999
  *************************/
-#include"ValidacionDatos.cpp"
+#include"ValidacionDatos.h"
 #define LONGITUD 10
 #pragma once
 char* ValidacionDatos::lecturaEnteros(char const *msj){
