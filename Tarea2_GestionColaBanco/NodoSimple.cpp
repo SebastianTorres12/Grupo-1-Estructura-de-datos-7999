@@ -1,11 +1,11 @@
-/*************************
+/*********
 UFA - ESPE
-AUTORES: MatÃ­as PadrÃ³n,Sebastian Torres, Cristhoper Villamarin, Paola Moncayo, Camilo Orrico, Jeimy Morales, Ariel Guevera
-FECHA DE CREACIÃ“N: 19/12/2022
-FECHA DE MODIFICACIÃ“N: 19/12/2022
-Grupo1-GestiÃ³n banco usando Colas
+AUTORES: Matías Padrón,Sebastian Torres, Cristhoper Villamarin, Paola Moncayo, Camilo Orrico, Jeimy Morales, Ariel Guevera
+FECHA DE CREACIÓN: 19/12/2022
+FECHA DE MODIFICACIÓN: 21/12/2022
+Grupo1-Gestión banco usando Colas
 GITHUB: Grupo-1-Estructura-de-datos-7999
- *************************/
+ *********/
 
 #include "NodoSimple.h"
 
