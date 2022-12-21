@@ -1,11 +1,11 @@
 /*********
 UFA - ESPE
-AUTORES: Mat�as Padr�n,Sebastian Torres, Cristhoper Villamarin, Paola Moncayo, Camilo Orrico, Jeimy Morales, Ariel Guevera
-FECHA DE CREACI�N: 19/12/2022
-FECHA DE MODIFICACI�N: 21/12/2022
-Grupo1-Gesti�n banco usando Colas
+AUTORES: Matías Padrón,Sebastian Torres, Cristhoper Villamarin, Paola Moncayo, Camilo Orrico, Jeimy Morales, Ariel Guevara
+FECHA DE CREACIÓN: 19/12/2022
+FECHA DE MODIFICACIÓN: 21/12/2022
+Grupo1-Gestión banco usando Colas
 GITHUB: Grupo-1-Estructura-de-datos-7999
-�*********/
+ *********/
 
 #include "Menu.h"
 #include "Cola.cpp"
@@ -126,14 +126,14 @@ void Menu::menuPrincipal(){
 }
 
 /**
- * Muestra un menú con un título y una lista de opciones, y devuelve el número de la opción
+ * Muestra un menÃº con un tÃ­tulo y una lista de opciones, y devuelve el nÃºmero de la opciÃ³n
  * seleccionada por el usuario
  * 
- * @param titulo El título del menú.
- * @param opciones es una matriz de cadenas que contiene las opciones que se mostrarán en el menú.
- * @param n número de opciones
+ * @param titulo El tÃ­tulo del menÃº.
+ * @param opciones es una matriz de cadenas que contiene las opciones que se mostrarÃ¡n en el menÃº.
+ * @param n nÃºmero de opciones
  * 
- * @return La opción seleccionada por el usuario.
+ * @return La opciÃ³n seleccionada por el usuario.
  */
 int Menu::menu(const char *titulo,const char *opciones[],int n){
     int opcSeleccionada=1;
@@ -177,7 +177,7 @@ int Menu::menu(const char *titulo,const char *opciones[],int n){
 }
 
 /**
- * Mueve el cursor a la posición especificada
+ * Mueve el cursor a la posiciÃ³n especificada
  * 
  * @param x La coordenada x del cursor.
  * @param y La coordenada y del cursor.
@@ -192,11 +192,11 @@ void Menu::gotoxy(int x,int y){
 }
  
 /**
- * Valida el número de DNI de una persona.
+ * Valida el nÃºmero de DNI de una persona.
  * 
  * @param cedulaC es una matriz de caracteres que contiene la entrada del usuario.
  * 
- * @return el valor de la variable cédula.
+ * @return el valor de la variable cÃ©dula.
  */
 /*int Menu::validarCedula(char *cedulaC){
 	ValidacionDatos objValidaciones;
