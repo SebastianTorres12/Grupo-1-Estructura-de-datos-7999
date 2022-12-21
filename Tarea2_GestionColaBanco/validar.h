@@ -1,10 +1,12 @@
-/***********************************************************************
- * UFA-ESPE
- * Autores:  Jeimy Marley Morales Sosa & Camilo Andres Orrico Emme 
- * Modificacion: Martes, 08 de nombre de 2022 21:17:59
- * Purpose: Areas de las figuras
- *Nivel: Tercero           NRC:7999
- ***********************************************************************/
+/*********
+UFA - ESPE
+AUTORES: Matías Padrón,Sebastian Torres, Cristhoper Villamarin, Paola Moncayo, Camilo Orrico, Jeimy Morales, Ariel Guevera
+FECHA DE CREACIÓN: 19/12/2022
+FECHA DE MODIFICACIÓN: 21/12/2022
+Grupo1-Gestión banco usando Colas
+GITHUB: Grupo-1-Estructura-de-datos-7999
+ *********/
+
 #include <iostream>
 #include <stdio.h>
 #include <string.h>
