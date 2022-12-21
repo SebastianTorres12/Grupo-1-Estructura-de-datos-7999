@@ -1,9 +1,11 @@
-/***********************************************************************
- * Module:  Fecha.cpp
- * Author:  sebas
- * Modified: miércoles, 14 de diciembre de 2022 8:56:01
- * Purpose: Implementation of the class Fecha
- ***********************************************************************/
+/*********
+UFA - ESPE
+AUTORES: MatÃ­as PadrÃ³n,Sebastian Torres, Cristhoper Villamarin, Paola Moncayo, Camilo Orrico, Jeimy Morales, Ariel Guevera
+FECHA DE CREACIÃ“N: 19/12/2022
+FECHA DE MODIFICACIÃ“N: 19/12/2022
+Grupo1-GestiÃ³n banco usando Colas
+GITHUB: Grupo-1-Estructura-de-datos-7999
+ *********/
 
 #include "Fecha.h"
 #include <ctime>
