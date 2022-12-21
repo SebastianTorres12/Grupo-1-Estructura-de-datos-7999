@@ -1,9 +1,4 @@
-/***********************************************************************
- * Module:  Fecha.cpp
- * Author:  sebas
- * Modified: miércoles, 14 de diciembre de 2022 8:56:01
- * Purpose: Implementation of the class Fecha
- ***********************************************************************/
+
 
 #include "Fecha.h"
 #include <ctime>
