@@ -1,9 +1,9 @@
 /*************************
 UFA - ESPE
-AUTORES: MatÃ­as PadrÃ³n,Sebastian Torres, Cristhoper Villamarin, Paola Moncayo, Camilo Orrico, Jeimy Morales, Ariel Guevera
-FECHA DE CREACIÃ“N: 20/12/2022
-FECHA DE MODIFICACIÃ“N: 20/12/2022
-Grupo1-MÃ©todos de bÃºsqueda 
+AUTORES: Matías Padrón,Sebastian Torres, Cristhoper Villamarin, Paola Moncayo, Camilo Orrico, Jeimy Morales, Ariel Guevera
+FECHA DE CREACIÓN: 20/12/2022
+FECHA DE MODIFICACIÓN: 20/12/2022
+Grupo1-Métodos de búsqueda 
 GITHUB: Grupo-1-Estructura-de-datos-7999
  *************************/
 
