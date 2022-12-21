@@ -1,9 +1,11 @@
-/***********************************************************************
- * Module:  Templates.h
- * Author:  Ariel Guevara, David Cantuña
- * Modified: domingo, 30 de octubre de 2022 12:39:07
- * Purpose: Declaration of the class Templates
- ***********************************************************************/
+/*********
+UFA - ESPE
+AUTORES: Matías Padrón,Sebastian Torres, Cristhoper Villamarin, Paola Moncayo, Camilo Orrico, Jeimy Morales, Ariel Guevera
+FECHA DE CREACIÓN: 19/12/2022
+FECHA DE MODIFICACIÓN: 21/12/2022
+Grupo1-Gestión banco usando Colas
+GITHUB: Grupo-1-Estructura-de-datos-7999
+ *********/
 
 #if !defined(__Class_Diagram_2_Templates_h)
 #define __Class_Diagram_2_Templates_h
