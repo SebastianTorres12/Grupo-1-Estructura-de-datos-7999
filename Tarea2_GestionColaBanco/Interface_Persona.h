@@ -1,9 +1,11 @@
-/***********************************************************************
- * Module:  Interface_Persona.h
- * Author:  sebas
- * Modified: miércoles, 14 de diciembre de 2022 9:06:55
- * Purpose: Declaration of the class Interface_Persona
- ***********************************************************************/
+/*********
+UFA - ESPE
+AUTORES: Matías Padrón,Sebastian Torres, Cristhoper Villamarin, Paola Moncayo, Camilo Orrico, Jeimy Morales, Ariel Guevera
+FECHA DE CREACIÓN: 19/12/2022
+FECHA DE MODIFICACIÓN: 21/12/2022
+Grupo1-Gestión banco usando Colas
+GITHUB: Grupo-1-Estructura-de-datos-7999
+ *********/
 
 #if !defined(__Class_Diagram_1_Interface_Persona_h)
 #define __Class_Diagram_1_Interface_Persona_h
