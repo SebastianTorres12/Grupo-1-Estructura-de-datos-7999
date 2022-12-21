@@ -1,6 +1,6 @@
 /*************************
 UFA - ESPE
-AUTORES: Matías Padrón,Sebastian Torres, Cristhoper Villamarin, Paola Moncayo, Camilo Orrico, Jeimy Morales, Ariel Guevera
+AUTORES: Matías Padrón,Sebastian Torres, Cristhopher Villamarin, Paola Moncayo, Camilo Orrico, Jeimy Morales, Ariel Guevera
 FECHA DE CREACIÓN: 20/12/2022
 FECHA DE MODIFICACIÓN: 20/12/2022
 Grupo1-Métodos de búsqueda 
