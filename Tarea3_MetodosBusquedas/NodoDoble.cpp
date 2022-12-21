@@ -1,9 +1,9 @@
 /*************************
 UFA - ESPE
-AUTORES: Mat�as Padr�n,Sebastian Torres, Cristhoper Villamarin, Paola Moncayo, Camilo Orrico, Jeimy Morales, Ariel Guevera
-FECHA DE CREACI�N: 20/12/2022
-FECHA DE MODIFICACI�N: 20/12/2022
-Grupo1-M�todos de b�squeda 
+AUTORES: Matías Padrón,Sebastian Torres, Cristhoper Villamarin, Paola Moncayo, Camilo Orrico, Jeimy Morales, Ariel Guevara
+FECHA DE CREACIÓN: 20/12/2022
+FECHA DE MODIFICACIÓN: 20/12/2022
+Grupo1-Métodos de búsqueda 
 GITHUB: Grupo-1-Estructura-de-datos-7999
  *************************/
 #include"NodoDoble.h"
@@ -73,7 +73,7 @@ NodoDoble<T> *NodoDoble<T>::getSiguiente()
 /**
  * *|CURSOR_MARCADOR|*
  * 
- * @param newSiguiente El nuevo nodo que será el siguiente nodo en la lista.
+ * @param newSiguiente El nuevo nodo que serÃ¡ el siguiente nodo en la lista.
  */
  template <typename T>
 void NodoDoble<T>::setSiguiente(NodoDoble *newSiguiente)
@@ -98,7 +98,7 @@ NodoDoble<T> *NodoDoble<T>::getAnterior()
 /**
  * *|CURSOR_MARCADOR|*
  * 
- * @param newAnterior El nuevo nodo que se establecerá como el nodo anterior.
+ * @param newAnterior El nuevo nodo que se establecerÃ¡ como el nodo anterior.
  */
  template <typename T>
 void NodoDoble<T>::setAnterior(NodoDoble *newAnterior)
