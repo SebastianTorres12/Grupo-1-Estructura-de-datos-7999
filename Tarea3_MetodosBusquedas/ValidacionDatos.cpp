@@ -5,7 +5,7 @@ FECHA DE CREACIÓN: 20/12/2022
 FECHA DE MODIFICACIÓN: 20/12/2022
 Grupo1-Métodos de búsqueda 
 GITHUB: Grupo-1-Estructura-de-datos-7999
- *************************/
+ **************************/
 
 #include"ValidacionDatos.h"
 #define LONGITUD 10
