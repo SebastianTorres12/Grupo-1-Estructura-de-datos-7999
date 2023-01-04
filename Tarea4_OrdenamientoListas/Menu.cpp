@@ -39,7 +39,7 @@ void Menu::menuPrincipal(){
 	const char *opciones4[]={"Ordenar por cedula.","Ordenar por apellido","Retornar al menu principal."};
 	const char *opciones5[]={"Insertar dato por cabeza.","Insertar dato por cola.","Eliminar dato por cabeza."
 	,"Eliminar dato por cola.","Buscar elemento.","Mostrar datos.","Retornar al menu principal."};
-	const char *opciones6[]={"Insertar dato por cola.","Insertar dato por cabeza.","Eliminar dato por cabeza.", 
+	const char *opciones6[]={"Insertar dato por cabeza.","Insertar dato por cola.","Eliminar dato por cabeza.", 
 	"Mostrar datos.","Retornar al menu principal."};
 	
 	/*
