@@ -1,15 +1,16 @@
 /*************************
 UFA - ESPE
-AUTORES: Matías Padrón,Sebastian Torres, Cristhopher Villamarin, Paola Moncayo, Camilo Orrico, Jeimy Morales, Ariel Guevara
-FECHA DE CREACIÓN: 20/12/2022
-FECHA DE MODIFICACIÓN: 2/01/2023
-Grupo1-Métodos de búsqueda 
+AUTORES: MatÃ­as PadrÃ³n,Sebastian Torres, Cristhoper Villamarin, Paola Moncayo, Camilo Orrico, Jeimy Morales, Ariel Guevera
+FECHA DE CREACIÃ“N: 20/12/2022
+FECHA DE MODIFICACIÃ“N: 20/12/2022
+Grupo1-MÃ©todos de bÃºsqueda 
 GITHUB: Grupo-1-Estructura-de-datos-7999
  *************************/
 
 
 #include "Menu.h"
 #include "ListaDoble.cpp"
+#include "ListaSimple.cpp"
 #include "ValidacionDatos.cpp"
 #include "ListaCircularDoble.cpp"
 #define Tecla_Arriba 72
@@ -38,6 +39,8 @@ void Menu::menuPrincipal(){
 	const char *opciones4[]={"Ordenar por cedula.","Ordenar por apellido","Retornar al menu principal."};
 	const char *opciones5[]={"Insertar dato por cabeza.","Insertar dato por cola.","Eliminar dato por cabeza."
 	,"Eliminar dato por cola.","Buscar elemento.","Mostrar datos.","Retornar al menu principal."};
+	const char *opciones6[]={"Insertar dato por cola.","Insertar dato por cabeza.","Eliminar dato por cabeza.", 
+	"Mostrar datos.","Retornar al menu principal."};
 	
 	/*
 	const char *opcionesH[]={"SI.","NO"};
@@ -45,8 +48,11 @@ void Menu::menuPrincipal(){
 	const char *opcionesND[]={"Agregar empleado","Eliminar por cabeza","Eliminar por cola","Eliminar apellidos iguales","Mostrar empleados","Retornar"};
     const char *tituloNC="REGISTRO NOMINA CIRCULAR";
     const char *opcionesNC[]={"Agregar empleado","Eliminar por cabeza","Eliminar por cola","Eliminar posicion","Mostrar empleados","Retornar"};*/
-    ListaDoble<Persona> objLista;
+    
+    ListaSimple<Persona> objSimple;
+	ListaDoble<Persona> objLista;
     ListaCircularDoble<Persona> lst;
+    
 	
 	do{
     	opcMP = menu(titulo,opciones,3);
@@ -57,9 +63,124 @@ void Menu::menuPrincipal(){
     				opcML=menu(titulo1,opciones1,4);
     				switch(opcML){
     					case 1:{
-    						system("cls");
-    						cout<<"Aqui la lista simple";
-    						system("pause");
+    						do{					
+								opcMR=menu(titulo2,opciones6,5);
+									switch(opcMR){
+										case 1:{
+										system("cls");
+										//
+							do{
+    						nombre=objValidar.lecturaTexto("\nIngrese el nombre del cliente-> ");
+    					    tamNombre=nombre.size();
+    					    if(tamNombre==0){
+    					    vNombre=true;
+    					    cout<<"Error: no se puede ingresar un nombre vacio, ingrese nuevamente"<<endl;
+							}else{
+							vNombre=false;
+							}
+							}while(vNombre);
+							vNombre=true;
+							//
+							
+							//
+							do{
+    					    apellido=objValidar.lecturaTexto("\nIngrese el apellido del cliente-> ");	
+    					    tamApellido=apellido.size();
+    					    if(tamApellido==0){
+    					    vApellido=true;
+    					    cout<<"Error: no se puede ingresar un apellido vacio, ingrese nuevamente"<<endl;
+							}else{
+							vApellido=false;
+							}
+							}while(vApellido);
+							vApellido=true;
+							//
+							do{
+    						cedulaS=objValidar.lecturaTextoNumerico("\nIngrese una cedula->");
+    						vCedula=verificarCedula(cedulaS);
+							if(vCedula==false){
+							cout<<"\nError: la cedula no es la adecuada, ingrese nuevamente"<<endl;
+							}
+							}while(!vCedula);
+							Persona *persona = new Persona(cedulaS,nombre,apellido);			
+							objSimple.insertarPorCabeza(persona);
+										system("pause");
+										break;
+										}
+										case 2:{
+										system("cls");
+																				//
+							do{
+    					    nombre=objValidar.lecturaTexto("\nIngrese el nombre del cliente-> ");
+    					    tamNombre=nombre.size();
+    					    if(tamNombre==0){
+    					    vNombre=true;
+    					    cout<<"Error: no se puede ingresar un nombre vacio, ingrese nuevamente"<<endl;
+							}else{
+							vNombre=false;
+							}
+							}while(vNombre);
+							vNombre=true;
+							//
+							
+							//
+							do{
+    					    apellido=objValidar.lecturaTexto("\nIngrese el apellido del cliente-> ");	
+    					    tamApellido=apellido.size();
+    					    if(tamApellido==0){
+    					    vApellido=true;
+    					    cout<<"Error: no se puede ingresar un apellido vacio, ingrese nuevamente"<<endl;
+							}else{
+							vApellido=false;
+							}
+							}while(vApellido);
+							vApellido=true;
+							//
+							do{
+    						cedulaS=objValidar.lecturaTextoNumerico("\nIngrese una cedula->");
+    						vCedula=verificarCedula(cedulaS);
+							if(vCedula==false){
+							cout<<"\nError: la cedula no es la adecuada, ingrese nuevamente"<<endl;
+							} 
+							}while(!vCedula);
+							
+							Persona *p = new Persona(cedulaS,nombre,apellido);	
+						
+							objSimple.insertarPorCola(p);
+							
+							cout<<endl;
+							system("PAUSE");
+							
+										break;
+									}
+								
+									case 3:{
+								system("cls");
+								cout<<endl;
+								objSimple.eliminarPorCabeza();
+								cout<<endl;
+								system("PAUSE");
+										break;
+									}
+									
+									case 4:{
+									system("cls");
+									cout<<endl;
+									objSimple.mostrarPorCabeza();
+									system("PAUSE");
+										break;
+									}
+
+									case 5:{
+										repetir5=false;
+										break;
+									}
+    									
+										
+								}
+							}while(repetir5);
+							repetir5=true;
+    						
 							break;
 						}
 						case 2:{
@@ -381,27 +502,33 @@ void Menu::menuPrincipal(){
     		case 2:{
     			system("cls");
     			
-    			
-    			
     			do{
     			opcMB=menu(titulo3,opciones3,4);
     			
     				switch(opcMB){
     					case 1:{
     						system("cls");
-    						cout<<"Aqui ordenamiento en lista simple"<<endl;
-    						do{
+							
+							    do{
     							opcOL=menu(titulo4,opciones4,3);
     							switch(opcOL){
     								case 1:{
     									system("cls");
-    									cout<<"Aqui ordenar por cedula"<<endl;
+    									cout<<"Lista sin ordenar."<<endl;
+    									objSimple.mostrarPorCabeza();
+    									cout<<"Lista ordenada por cedula."<<endl;
+    									objSimple.ordenarCedula();
+    									objSimple.mostrarPorCabeza();
     									system("pause");
 										break;
 									}
 									case 2:{
 										system("cls");
-										cout<<"Aqui ordenar por apellido"<<endl;
+										cout<<"Lista sin ordenar."<<endl;
+										objSimple.mostrarPorCabeza();
+										cout<<"Lista ordenada por apellido."<<endl;
+										objSimple.ordenarApellido();
+										objSimple.mostrarPorCabeza();
 										system("pause");
 										break;
 									}
