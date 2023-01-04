@@ -1,3 +1,11 @@
+/*********
+UFA - ESPE
+AUTORES: Matías Padrón,Sebastian Torres, Cristhopher Villamarin, Paola Moncayo, Camilo Orrico, Jeimy Morales, Ariel Guevara
+FECHA DE CREACIÓN: 20/12/2022
+FECHA DE MODIFICACIÓN: 2/01/2023
+Grupo1-Métodos de búsqueda 
+GITHUB: Grupo-1-Estructura-de-datos-7999
+ *********/
 #include "ListaSimple.h"
 #include <iostream>
 
@@ -18,7 +26,7 @@ void ListaSimple<T>::setPrimerNodo(NodoSimple *first)
 /**
  * |CURSOR_MARCADOR|
  * 
- * @param now El nodo que se establecer� como el nodo real.
+ * @param now El nodo que se establecerá como el nodo real.
  */
 template <typename T>
 void ListaSimple<T>::setUltimoNodo(NodoSimple *now)
