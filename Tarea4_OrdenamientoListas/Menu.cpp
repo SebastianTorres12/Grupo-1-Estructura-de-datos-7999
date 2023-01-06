@@ -38,7 +38,7 @@ void Menu::menuPrincipal(){
     const char *titulo4="DE QUE MANERA DESEA ORDENAR?";
 	const char *opciones4[]={"Ordenar por cedula.","Ordenar por apellido","Retornar al menu principal."};
 	const char *opciones5[]={"Insertar dato por cabeza.","Insertar dato por cola.","Eliminar dato por cabeza."
-	,"Eliminar dato por cola.","Buscar elemento.","Mostrar datos.","Retornar al menu principal."};
+	,"Eliminar dato por cola.","Mostrar datos.","Retornar al menu principal."};
 	const char *opciones6[]={"Insertar dato por cabeza.","Insertar dato por cola.","Eliminar dato por cabeza.", 
 	"Mostrar datos.","Retornar al menu principal."};
 	
@@ -51,6 +51,7 @@ void Menu::menuPrincipal(){
     
     ListaSimple<Persona> objSimple;
 	ListaDoble<Persona> objLista;
+	ListaDoble<Persona> objListaCircular;
     ListaCircularDoble<Persona> lst;
     
 	
@@ -353,10 +354,10 @@ void Menu::menuPrincipal(){
 						case 3:{
 							system("cls");
     						do{
-    							opcMLC=menu(titulo2,opciones5,7);
+    							opcMLC=menu(titulo2,opciones5,6);
     							switch(opcMLC){
     								case 1:{
-    														system("cls");
+    								system("cls");
 						do{
     					    nombre=objValidar.lecturaTexto("\nIngrese el nombre del cliente-> ");
     					    tamNombre=nombre.size();
@@ -391,7 +392,8 @@ void Menu::menuPrincipal(){
 							}
 							}while(!vCedula);
 							Persona *p = new Persona(cedulaS,nombre,apellido);	
-							lst.insertarPoCabeza(p);
+							objListaCircular.insertarPorCabeza(p);
+							//lst.insertarPoCabeza(p);
 							cout<<endl;
 							system("PAUSE");
 										break;
@@ -433,8 +435,8 @@ void Menu::menuPrincipal(){
 							}
 							}while(!vCedula);
 							Persona *p = new Persona(cedulaS,nombre,apellido);	
-						
-							lst.insertarPoCola(p);
+							objListaCircular.insertarPorCola(p);
+							//lst.insertarPoCola(p);
 							cout<<endl;
 							system("PAUSE");
 										break;
@@ -442,7 +444,8 @@ void Menu::menuPrincipal(){
 									case 3:{
 								system("cls");
 								cout<<endl;
-								lst.eliminarCabeza();
+								//lst.eliminarCabeza();
+								objListaCircular.eliminarPorCabeza();
 								cout<<endl;
 								system("PAUSE");
 										break;
@@ -450,31 +453,23 @@ void Menu::menuPrincipal(){
 									case 4:{
 								system("cls");
 								cout<<endl;
-								lst.eliminarCola();
+								objListaCircular.eliminarPorCola();
+								//lst.eliminarCola();
 								cout<<endl;
 								system("PAUSE");
 								
 										break;
 									}
+
 									case 5:{
-								system("cls");
-								cout<<endl;	
-								lst.buscar();
-								cout<<endl;
-								cout<<endl;
-								system("PAUSE");
-								
-										break;
-									}
-									case 6:{
 									system("cls");
 									cout<<endl;
-									lst.mostrarLista();
+									objListaCircular.mostrarPorCabeza();
 									system("PAUSE");
 										break;
 									}
 
-									case 7:{
+									case 6:{
 										repetir5=false;
 										break;
 									}
@@ -585,21 +580,21 @@ void Menu::menuPrincipal(){
     								case 1:{
     									system("cls");
     									cout<<"Lista sin ordenar."<<endl;
-    									lst.mostrarLista();
+    									objListaCircular.mostrarPorCabeza();
     									cout<<"Lista ordenada por cedula."<<endl;
     									cout<<endl;
-										lst.ordenarCedula();
-										lst.mostrarLista();
+										objListaCircular.ordenamientoCedula();
+										objListaCircular.mostrarPorCabeza();
     									system("pause");
 										break;
 									}
 									case 2:{
 										system("cls");
 										cout<<"Lista sin ordenar."<<endl;
-    									lst.mostrarLista();
+    									objListaCircular.mostrarPorCabeza();
     								    cout<<endl;
-                						lst.ordenarApellido();
-										lst.mostrarLista();
+                						objListaCircular.ordenamientoBurbuja();
+										objListaCircular.mostrarPorCabeza();
 										system("pause");
 										break;
 									}
@@ -755,4 +750,3 @@ bool Menu::verificarCedula(const string &cedula){
     return digitoVerificar == (cedula[9] - '0');
 	
 }
-
